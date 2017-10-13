@@ -29,7 +29,7 @@ def get_line(fn):
 
 
 def get_module_name(fn):
-    return inspect.getmodule(fn).__file__.strip()
+    return inspect.getmodule(fn).__file__[:-1]
 
 
 def shortened(seq, max_len=10):
